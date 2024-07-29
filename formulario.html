@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <!--Formulario, es una herramienta que me permite 
+        recolectar informacion y mediente un boton de 
+        accion enviar eso datos a una tabla, una BD,
+        uns API-->
+        <form action="resultados.html" method="get">
+            <!--GET lo envia al navegador de confianza
+                POST envier informacion por un metodo fisico-->
+                <div>
+                    <label for="user">Usuario</label>
+                    <input type="text" name="username" id="user" required />
+                </div>
+                <br>
+                <div>
+                    <label for="email">Correo</label>
+                    <input type="email" name="mail" id="email" />
+                </div>
+                <br>
+                <div>
+                    <label form="comentario">Comentarios</label>
+                    <input name="comments" id="comentario">
+                </div>
+                <br>
+                <div>
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="password" id="pass" required />
+                </div>
+                <br>
+                <div>
+                    <label for="fechanacimiento">Fecha de Nacimiento</label>
+                    <input type="date" name="born" id="fechanacimiento" required />
+                </div>
+                <br>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="yers" id="edad" min="0" max="100" step="5" required />
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Guardar</button> 
+                    <!--Enviar con la tecla enter-->
+                    <button type="reset">Borrar</button>  
+                    <!--Limpiar formulario-->
+                </div>
+        </form>
+    </body>
+</html>
